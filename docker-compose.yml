@@ -5,8 +5,9 @@ services:
   host-web:
     build:
       context: .
-      container_name: mywebcont
-      image: nginx-img
-      ports:
-        - 80:80
+      dockerfile: dockerfile  
+    ports:
+      - "80:80"
+    image: nginx-img
+    container_name: mycont01  
 
